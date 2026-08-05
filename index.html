@@ -20,7 +20,9 @@
     --serif:Georgia,"Times New Roman",serif;
     --maxw:1000px;
   }
-
+  ::-webkit-input-placeholder { 
+    color: rgb(158, 156, 156);
+  }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
   body,.page{background:var(--void);color:var(--ink)}
@@ -372,7 +374,7 @@
 
     <svg class="wave" id="wave" viewBox="0 0 640 56" preserveAspectRatio="none" aria-hidden="true"></svg>
 
-    <div class="meta">Fri Aug 22 &nbsp;<span>&middot;</span>&nbsp; 6:00&ndash;10:00 PM &nbsp;<span>&middot;</span>&nbsp; Jacksonville Beach</div>
+    <div class="meta">Sat Aug 22 &nbsp;<span>&middot;</span>&nbsp; 6:00&ndash;10:00 PM &nbsp;<span>&middot;</span>&nbsp; Jacksonville Beach</div>
     <a class="cta" href="#rsvp">Open the Phone Lines &rarr;</a>
   </header>
 
@@ -386,7 +388,7 @@
     <div class="grid">
       <div class="cell">
         <div class="k">Air Date</div>
-        <div class="v">Aug 22<small>Friday night</small></div>
+        <div class="v">Aug 22<small>Saturday night</small></div>
       </div>
       <div class="cell">
         <div class="k">On the Air</div>
@@ -481,24 +483,25 @@
         <div class="time">Hour 2</div>
         <div>
           <h3>The Great Trivia Standoff</h3>
-          <p>Two teams. One board of conspiracy trivia. Winner takes the tin-foil crown; loser goes on the no-fly list.</p>
+          <p>Two teams battling head-to-head in conspiracy trivia. Winner takes the tin-foil crown; loser goes on the no-fly list.</p>
         </div>
       </div>
       <div class="seg">
         <div class="time">Hour 3</div>
         <div>
-          <img class="seg-img" src="images/cake-lie.jpg" alt="The all-seeing-eye birthday cake">
-          <h3>The Cake Is A Lie</h3>
-          <p>We light the all-seeing-eye cake, sing (badly), and cut in &mdash; assuming it&rsquo;s real. Frosting is the ultimate cover-up.</p>
+          <h3>Invent-a-Conspiracy Contest</h3>
+          <p>Draw a mundane object from the hat. Ten minutes to expose the sinister truth behind it. Most convincing theory is crowned Chief Truth-Teller.</p>
         </div>
       </div>
       <div class="seg">
         <div class="time">Hour 4</div>
         <div>
-          <h3>Invent-a-Conspiracy Contest</h3>
-          <p>Draw a mundane object from the hat. Ten minutes to expose the sinister truth behind it. Most convincing theory is crowned Chief Truth-Teller.  <br><br>Broadcast ends. Or does it?</p>
+          <img class="seg-img" src="images/cake-lie.jpg" alt="The all-seeing-eye birthday cake">
+          <h3>The Cake Is A Lie</h3>
+          <p>We light the all-seeing-eye cake, sing (badly), and cut in &mdash; assuming it&rsquo;s real. Frosting is the ultimate cover-up.<br/><br/>Broadcast ends. Or does it?</p>
         </div>
       </div>
+      
     </div>
   </section>
 
@@ -519,14 +522,13 @@
         <div class="field">
           <label for="attending">Are You Coming?</label>
           <select id="attending" name="attending">
-            <option>Yes — I&rsquo;m descending</option>
-            <option>Yes — bringing a fellow believer</option>
-            <option>Can&rsquo;t make it (the Men in Black got me)</option>
+            <option>Yes — I want to be a believer</option>
+            <option>Can't make it (the Men in Black got me)</option>
           </select>
         </div>
         <div class="field">
           <label for="headcount">Head Count</label>
-          <input id="headcount" name="headcount" type="number" min="1" value="1">
+          <input id="headcount" name="headcount" type="number" min="1" value="2">
         </div>
         <div class="field">
           <label for="theory">Your Favorite Conspiracy Theory</label>
@@ -534,7 +536,7 @@
         </div>
         <div class="field full">
           <label for="msg">Transmission to the Host</label>
-          <textarea id="msg" name="msg" placeholder="Dietary needs, secret intel, song requests for the after-party..."></textarea>
+          <textarea id="msg" name="msg" placeholder="Dietary needs, secret intel, song requests, code names..."></textarea>
         </div>
         <button class="transmit" type="submit">&#9679; Transmit RSVP</button>
         <p class="note">// Composes your RSVP &mdash; choose Gmail or your mail app next. Nothing is stored on this page.</p>
