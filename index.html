@@ -9,8 +9,8 @@
     --ember:#ff7a2c;
     --teal:#3fb8b0;
     --ink:#ece5d6;
-    --muted:#8a94a3;
-    --muted-2:#5c6675;
+    --muted:#b5bdcb;
+    --muted-2:#9da5b2;
     --line:rgba(255,255,255,.09);
     --line-strong:rgba(255,178,62,.35);
     --onair:#ff3b30;
@@ -69,7 +69,7 @@
   }
   .kicker{
     font-family:var(--mono);text-transform:uppercase;letter-spacing:.28em;
-    font-size:11px;color:var(--muted);
+    font-size:12px;color:var(--muted);
   }
 
   /* ---- top status bar ---- */
@@ -143,7 +143,7 @@
   .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);
     border:1px solid var(--line)}
   .cell{background:var(--panel);padding:22px 20px}
-  .cell .k{font-family:var(--mono);text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(--muted)}
+  .cell .k{font-family:var(--mono);text-transform:uppercase;letter-spacing:.2em;font-size:12px;color:var(--muted)}
   .cell .v{font-family:var(--disp);text-transform:uppercase;font-size:clamp(22px,3.6vw,30px);
     color:var(--ink);line-height:1;margin-top:12px;letter-spacing:.02em}
   .cell .v small{display:block;font-family:var(--serif);text-transform:none;letter-spacing:0;
@@ -172,9 +172,9 @@
     box-shadow:0 0 16px rgba(255,59,48,.45)}
   .file .body{padding:18px 18px 22px}
   .file .name{font-family:var(--disp);text-transform:uppercase;font-size:26px;letter-spacing:.02em;color:var(--ink);line-height:.95}
-  .file .role{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-top:8px}
+  .file .role{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-top:8px}
   .file .desc{font-size:14.5px;color:var(--muted);margin-top:12px}
-  .file .years{font-family:var(--mono);font-size:11px;color:var(--muted-2);letter-spacing:.1em;margin-top:12px}
+  .file .years{font-family:var(--mono);font-size:12px;color:var(--muted-2);letter-spacing:.1em;margin-top:12px}
 
   /* ---- itinerary ---- */
   .segs{display:flex;flex-direction:column;gap:0;border:1px solid var(--line)}
@@ -186,7 +186,7 @@
     letter-spacing:.02em;color:var(--ink);margin:0 0 6px}
   .seg p{margin:0;color:var(--muted);font-size:15px}
   .menu{list-style:none;margin:16px 0 6px;padding:16px 0 0;border-top:1px dashed var(--line);
-    display:flex;flex-direction:column;gap:11px}
+    display:flex;flex-direction:column;gap:12px}
   .menu li{display:flex;flex-wrap:wrap;align-items:baseline;gap:3px 10px}
   .menu .dish{font-family:var(--mono);text-transform:uppercase;letter-spacing:.09em;font-size:13px;
     font-weight:700;color:var(--amber)}
@@ -219,7 +219,7 @@
   form{display:grid;grid-template-columns:1fr 1fr;gap:18px}
   .field{display:flex;flex-direction:column;gap:8px}
   .field.full{grid-column:1/-1}
-  label{font-family:var(--mono);text-transform:uppercase;letter-spacing:.16em;font-size:11px;color:var(--muted)}
+  label{font-family:var(--mono);text-transform:uppercase;letter-spacing:.16em;font-size:12px;color:var(--muted)}
   input,select,textarea{
     font-family:var(--serif);font-size:16px;color:var(--ink);
     background:var(--void-2);border:1px solid var(--line);border-radius:2px;padding:12px 14px;
@@ -238,7 +238,7 @@
   }
   .transmit:hover{transform:translateY(-2px);background:var(--amber-bright);box-shadow:0 0 44px rgba(255,178,62,.55)}
   .transmit:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
-  .note{grid-column:1/-1;font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--muted-2);margin-top:2px}
+  .note{grid-column:1/-1;font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--muted-2);margin-top:2px}
   .sent{display:none;margin-top:24px;padding:22px 22px 24px;border:1px solid var(--line-strong);
     border-radius:3px;background:var(--void-2)}
   .sent.show{display:block}
@@ -266,7 +266,7 @@
   footer .sign{font-family:var(--disp);text-transform:uppercase;font-size:clamp(26px,6vw,44px);
     color:var(--ink);letter-spacing:.03em;line-height:.95}
   footer .sign .glow{color:var(--amber);text-shadow:0 0 26px rgba(255,178,62,.6)}
-  footer .fine{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--muted-2);
+  footer .fine{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--muted-2);
     text-transform:uppercase;margin-top:18px}
 </style>
 
@@ -392,7 +392,7 @@
       </div>
       <div class="cell">
         <div class="k">On the Air</div>
-        <div class="v">6&ndash;10<small>PM &mdash; before the veil thins</small></div>
+        <div class="v">6&ndash;10 P.M.<small>&mdash; before the veil thins</small></div>
       </div>
       <div class="cell">
         <div class="k">Coordinates</div>
@@ -422,7 +422,7 @@
           <div class="name">Art Bell</div>
           <div class="role">Founder &middot; <a class="lnk" href="https://www.coasttocoastam.com/" target="_blank" rel="noopener">Coast to Coast AM</a></div>
           <p class="desc">The original voice of the night. Broadcast from the high desert to every insomniac, trucker, and truth-seeker in the land. Patron saint of this whole affair.</p>
-          <div class="years">1945 &ndash; 2018 &middot; The Kingdom of Nye</div>
+          <div class="years">1945-2018 &middot; The Kingdom of Nye</div>
         </div>
       </article>
 
