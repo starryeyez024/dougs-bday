@@ -112,22 +112,19 @@
   }
   .hero .sub b{color:var(--ink);font-style:normal}
   .wave{display:block;width:100%;max-width:640px;height:56px;margin:26px auto 4px;opacity:.9}
-  .hero .meta{
-    font-family:var(--mono);font-size:13px;letter-spacing:.18em;text-transform:uppercase;
-    color:var(--amber);margin-top:6px;
+  /* escape-hatch RSVP link under the no-gifts bulletin */
+  .rsvp-cue{text-align:center;margin:26px 0 18px}
+  .rsvp-mini{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:var(--mono);text-transform:uppercase;letter-spacing:.16em;font-size:11.5px;
+    color:var(--muted);text-decoration:none;
+    border:1px solid var(--line-strong);border-radius:2px;padding:9px 16px;
+    background:rgba(255,178,62,.04);
+    transition:color .15s ease,border-color .15s ease,background .15s ease;
   }
-  .hero .meta span{color:var(--muted)}
-
-  .cta{
-    display:inline-block;margin-top:26px;
-    font-family:var(--mono);text-transform:uppercase;letter-spacing:.22em;font-weight:700;
-    font-size:14px;color:var(--void);background:var(--amber);
-    padding:15px 30px;border:1px solid var(--amber-bright);border-radius:2px;
-    text-decoration:none;box-shadow:0 0 34px rgba(255,178,62,.4);
-    transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
-  }
-  .cta:hover{transform:translateY(-2px);background:var(--amber-bright);box-shadow:0 0 46px rgba(255,178,62,.6)}
-  .cta:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+  .rsvp-mini b{color:var(--amber);font-weight:700}
+  .rsvp-mini:hover{color:var(--ink);border-color:var(--amber);background:rgba(255,178,62,.1)}
+  .rsvp-mini:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
 
   /* ---- section frame ---- */
   section{padding:52px 0;border-top:1px solid var(--line);position:relative}
@@ -150,6 +147,17 @@
     font-size:14px;color:var(--amber);margin-top:8px;font-style:italic;line-height:1.4}
   @media (max-width:760px){.grid{grid-template-columns:repeat(2,1fr)}}
   @media (max-width:420px){.grid{grid-template-columns:1fr}}
+
+  /* ---- no-gifts bulletin ---- */
+  .bulletin{
+    margin-top:1px;background:var(--panel-2);border:1px solid var(--line);border-top:0;
+    padding:22px 20px;display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap;
+  }
+  .bulletin .k{font-family:var(--mono);text-transform:uppercase;letter-spacing:.2em;font-size:12px;
+    color:var(--onair);white-space:nowrap;padding-top:3px}
+  .bulletin p{margin:0;flex:1;min-width:240px;font-size:15.5px;color:var(--muted)}
+  .bulletin b{color:var(--ink)}
+  .bulletin i{color:var(--amber);font-style:italic}
 
   /* ---- dossier / guest cards ---- */
   .dossiers{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -374,8 +382,6 @@
 
     <svg class="wave" id="wave" viewBox="0 0 640 56" preserveAspectRatio="none" aria-hidden="true"></svg>
 
-    <div class="meta">Sat Aug 22 &nbsp;<span>&middot;</span>&nbsp; 6:00&ndash;10:00 PM &nbsp;<span>&middot;</span>&nbsp; Jacksonville Beach</div>
-    <a class="cta" href="#rsvp">Open the Phone Lines &rarr;</a>
   </header>
 
   <!-- TRANSMISSION DETAILS -->
@@ -402,6 +408,13 @@
         <div class="k">Dress Code</div>
         <div class="v">Tin-Foil<small>Formal. Faraday chic. Field-researcher casual.</small></div>
       </div>
+    </div>
+    <div class="bulletin">
+      <div class="k">// No Gifts</div>
+      <p><b>Seriously, no gifts.</b> Just bring your best <i>tinfoil hat</i>, your favorite <i>conspiracy theory</i>, and any <i>alcohol or mind-bending substance</i> of your choosing. That&rsquo;s the whole ask.</p>
+    </div>
+    <div class="rsvp-cue">
+      <a class="rsvp-mini" href="#rsvp">&#9679; <b>RSVP</b> &mdash; even if it&rsquo;s a &ldquo;can&rsquo;t make it&rdquo; &darr;</a>
     </div>
   </section>
 
@@ -509,7 +522,7 @@
   <section class="wrap" id="rsvp" aria-label="RSVP">
     <div class="sechead">
       <span class="no">// 04</span>
-      <h2>Call Into the Show</h2>
+      <h2>Call Into the Show (RSVP)</h2>
       <span class="rule"></span>
     </div>
     <div class="rsvp-wrap">
